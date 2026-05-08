@@ -1,3 +1,5 @@
+# Trivia Game V2_Built by Amanda
+# Features: menu system, hints, double or nothing bonus question, and more user-friendly input handling
 import threading
 
 def show_hint_after_delay(hint, delay=20):
@@ -137,7 +139,7 @@ else:
     print("That is incorrect.")
     try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer5 = input("It's a counterintuitive phenomenon that has been observed for centuries... Your answer: ").strip().lower()
+        answer5 = input("Hint: t's a counterintuitive phenomenon that has been observed for centuries... Your answer: ").strip().lower()
         if answer5 == "":
             print("Question skipped.")
         elif any (a in answer5.lower() for a in answer5_correct):
@@ -270,17 +272,17 @@ if double_or_nothing == "yes" or double_or_nothing == "y":
     answer_bonus = input("In what year did World War II end? ").strip().lower()
     if answer_bonus == "":
         print("Question skipped.")
-        print(f"Your final score is: {score} out of 20!")
+        print(f"Your final score is: {score} out of 10!")
         print("Press Enter to exit the game.")
     elif answer_bonus_correct in answer_bonus.lower():
         print("CORRECT! Your score has been doubled!")
         score *= 2
-        print(f"Your final score is: {score} out of 20!")
+        print(f"Your final score is: {score} out of 10!")
         print("Press Enter to exit the game.")
     else:
         print(f"Sorry, that is incorrect. The answer was {answer_bonus_correct}. Your score has been reset to zero.")
         score = 0
-        print(f"Your final score is: {score} out of 20.")
+        print(f"Your final score is: {score} out of 10.")
         print("Press Enter to exit the game.")
 
 else:
