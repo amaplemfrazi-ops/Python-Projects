@@ -23,15 +23,18 @@ while True:
             print(f"Remaining budget: ${budget - total:.2f}")
     except:
         print("Invalid input. Please enter a valid amount.")
-print("\n-- Transaction Summary --")
-print(f"Total transactions: {len(transactions)}")
-for t in transactions:
-    print(f" {t['description']} - ${t['amount']:.2f}")
-print(f"\nTotal spent: ${total:.2f}")
-print(f"Budget: ${budget:.2f}")
-
-if total > budget:
-    print(f"You went ${total - budget:.2f} over budget!")
+if len(transactions) == 0:
+    print("No transactions were entered. Goodbye!")
 else:
-    print(f"You stayed under budget by ${budget - total:.2f}. Great job!")
-    
+    print("\n-- Transaction Summary --")
+    print(f"Total transactions: {len(transactions)}")
+    for t in transactions:
+        print(f" {t['description']} - ${t['amount']:.2f}")
+    print(f"\nTotal spent: ${total:.2f}")
+    print(f"Budget: ${budget:.2f}")
+
+    if total > budget:
+        print(f"You went ${total - budget:.2f} over budget!")
+    else:
+        print(f"You stayed under budget by ${budget - total:.2f}. Great job!")
+
