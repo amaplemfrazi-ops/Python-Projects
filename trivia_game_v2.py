@@ -272,17 +272,17 @@ if double_or_nothing == "yes" or double_or_nothing == "y":
     answer_bonus = input("In what year did World War II end? ").strip().lower()
     if answer_bonus == "":
         print("Question skipped.")
-        print(f"Your final score is: {score} out of 20!")
+        print(f"Your final score is: {score} out of 10!")
         print("Press Enter to exit the game.")
     elif answer_bonus_correct in answer_bonus.lower():
         print("CORRECT! Your score has been doubled!")
         score *= 2
-        print(f"Your final score is: {score} out of 20!")
+        print(f"Your final score is: {score} out of 10!")
         print("Press Enter to exit the game.")
     else:
         print(f"Sorry, that is incorrect. The answer was {answer_bonus_correct}. Your score has been reset to zero.")
         score = 0
-        print(f"Your final score is: {score} out of 20.")
+        print(f"Your final score is: {score} out of 10.")
         print("Press Enter to exit the game.")
 
 else:
