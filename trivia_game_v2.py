@@ -105,7 +105,7 @@ else:
     else:
         print(f"Sorry, the correct answer is: {answer3_correct.capitalize()}!")
         print("Moving on to the next question.")
-answer4 = ask_question("4. In human anatomy, what does the “hallux” refer to?", "It helps with balance when you walk.")
+answer4 = ask_question("4. In human anatomy, what does the 'hallux' refer to?", "It helps with balance when you walk.")
 if answer4 == "":
     print("Question skipped.")
 elif answer4_correct in answer4.lower():
@@ -193,7 +193,7 @@ else:
     else:
         print(f"Sorry, the correct answer is: {answer7_correct.capitalize()}!")
         print("Moving on to the next question.")
-answer8 = ask_question("8. What does the acronym “URL” stand for?", "It's a term commonly used in web development and internet browsing.")
+answer8 = ask_question("8. What does the acronym 'URL' stand for?", "It's a term commonly used in web development and internet browsing.")
 if answer8 == "":
     print("Question skipped.")
 elif answer8_correct in answer8.lower():
