@@ -47,9 +47,9 @@ elif any(a in answer1.lower() for a in answer1_correct):
     score += 1
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer1 = input("Your answer: ").strip().lower()
+        answer1 = input("Hint: It's red and often used in desserts... Your answer: ").strip().lower()
         if answer1 == "":
             print("Question skipped.")
         elif any(a in answer1.lower() for a in answer1_correct):
@@ -69,9 +69,9 @@ elif answer2_correct in answer2.lower():
     score += 1 
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer2 = input("Your answer: ").strip().lower()
+        answer2 = input("Hint: It's the largest state by area... Your answer: ").strip().lower()
         if answer2 == "":
             print("Question skipped.")
         elif answer2_correct in answer2.lower():
@@ -91,9 +91,9 @@ elif answer3_correct in answer3.lower():
     score += 1
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer3 = input("Your answer: ").strip().lower()
+        answer3 = input(f"Hint: It starts with the letter {answer3_correct[0]}... Your answer: ").strip().lower()
         if answer3 == "":
             print("Question skipped.")
         elif answer3_correct in answer3.lower():
@@ -113,9 +113,9 @@ elif answer4_correct in answer4.lower():
     score += 1
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer4 = input("Your answer: ").strip().lower()
+        answer4 = input("Hint: It helps with balance when you walk... Your answer: ").strip().lower()
         if answer4 == "":
             print("Question skipped.")
         elif answer4_correct in answer4.lower():
@@ -135,9 +135,9 @@ elif any (a in answer5.lower() for a in answer5_correct):
     score += 1
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer5 = input("Your answer: ").strip().lower()
+        answer5 = input("It's a counterintuitive phenomenon that has been observed for centuries... Your answer: ").strip().lower()
         if answer5 == "":
             print("Question skipped.")
         elif any (a in answer5.lower() for a in answer5_correct):
@@ -157,9 +157,9 @@ elif answer6_correct in answer6.lower():
     score += 1
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer6 = input("Your answer: ").strip().lower()
+        answer6 = input("Hint: It's also the body's first line of defense against pathogens... Your answer: ").strip().lower()
         if answer6 == "":
             print("Question skipped.")
         elif answer6_correct in answer6.lower():
@@ -179,9 +179,9 @@ elif answer7_correct in answer7.lower():
     score += 1
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer7 = input("Your answer: ").strip().lower()
+        answer7 = input("Hint: It's a flamboyant word that matches the birds' vibrant appearance... Your answer: ").strip().lower()
         if answer7 == "":
             print("Question skipped.")
         elif answer7_correct in answer7.lower():
@@ -201,9 +201,9 @@ elif answer8_correct in answer8.lower():
     score += 1
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer8 = input("Your answer: ").strip().lower()
+        answer8 = input("Hint: It's a term commonly used in web development and internet browsing... Your answer: ").strip().lower()
         if answer8 == "":
             print("Question skipped.")
         elif answer8_correct in answer8.lower():
@@ -223,9 +223,9 @@ elif answer9_correct in answer9.lower():
     score += 1
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer9 = input("Your answer: ").strip().lower()
+        answer9 = input("Hint: It occurs around June 21st in the Northern Hemisphere... Your answer: ").strip().lower()
         if answer9 == "":
             print("Question skipped.")
         elif answer9_correct in answer9.lower():
@@ -245,9 +245,9 @@ elif answer10_correct in answer10.lower():
     score += 1
 else:
     print("That is incorrect.")
-    try_again = input("Would you like to try again? (Y or N): ").strip().lower()
+    try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer10 = input("Your answer: ").strip().lower()
+        answer10 = input("Hint: Edible jars of this were found in Egyptian tombs thousands of years old... Your answer: ").strip().lower()
         if answer10 == "":
             print("Question skipped.")
         elif answer10_correct in answer10.lower():
