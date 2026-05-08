@@ -1,3 +1,5 @@
+# Trivia Game V2_Built by Amanda
+# Features: menu system, hints, double or nothing bonus question, and more user-friendly input handling
 import threading
 
 def show_hint_after_delay(hint, delay=20):
@@ -137,7 +139,7 @@ else:
     print("That is incorrect.")
     try_again = input("Would you like to try again with a hint? (Y or N): ").strip().lower()
     if try_again == "yes" or try_again == "y":
-        answer5 = input("It's a counterintuitive phenomenon that has been observed for centuries... Your answer: ").strip().lower()
+        answer5 = input("Hint: t's a counterintuitive phenomenon that has been observed for centuries... Your answer: ").strip().lower()
         if answer5 == "":
             print("Question skipped.")
         elif any (a in answer5.lower() for a in answer5_correct):
