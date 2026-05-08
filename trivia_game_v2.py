@@ -10,7 +10,7 @@ score = 0
 # correct answers
 answer1_correct = ["strawberry", "strawberries"]
 answer2_correct = "alaska"
-answer3_correct = "anglet"
+answer3_correct = "aglet"
 answer4_correct = "big toe"
 answer5_correct = ["hot water", "hot", "hot water freezes faster than cold water"]
 answer6_correct = "skin"
